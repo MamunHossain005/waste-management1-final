@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{layout :: page_head}"></head>
+
+<body>
+	<div class="container">
+		<!--Navbar Start-->
+		<nav th:replace="~{layout :: page_navbar}"></nav>
+		<!--Navbar End-->
+
+		<!--Carousel Start-->
+		<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/1.jpg" class="d-block w-100 object-fit-cover" alt="..." height="500px">
+				</div>
+				<div class="carousel-item">
+					<img src="img/2.jpg" class="d-block w-100 object-fit-cover" alt="..." height="500px">
+				</div>
+				<div class="carousel-item">
+					<img src="img/3.jpg" class="d-block w-100 object-fit-cover" alt="..." height="500px">
+				</div>
+				<div class="carousel-item">
+					<img src="img/4.jpg" class="d-block w-100 object-fit-cover" alt="..." height="500px">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		<!--Carousel End-->
+
+		<h1 class="fw-bold text-center text-success mt-5 mb-4">We Manage Your Wastes</h1>
+
+		<div class="row gap-4">
+			<div class="col shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+				<h3 class="text-center text-info">Total Number of LGAs</h3>
+				<h5 class="text-center">2018-19</h5>
+				<p class="fs-2 fw-bold text-center text-warning">129</p>
+			</div>
+			<div class="col shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+				<h3 class="text-center text-info">Total Number of Houses surveyed</h3>
+				<h5 class="text-center">2018-19</h5>
+				<p class="fs-2 fw-bold text-center text-warning"> 3232559</p>
+			</div>
+		</div>
+
+		<div class="row gap-4">
+			<div class="col shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+				<h3 class="text-center text-info">Total Number of LGAs</h3>
+				<h5 class="text-center">2019-20</h5>
+				<p class="fs-2 fw-bold text-center text-warning">129</p>
+			</div>
+			<div class="col shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+				<h3 class="text-center text-info">Total Number of Houses surveyed</h3>
+				<h5 class="text-center">2019-20</h5>
+				<p class="fs-2 fw-bold text-center text-warning">3342024</p>
+			</div>
+		</div>
+		
+		<div class="mt-5 shadow-sm p-3 mb-5 bg-info-subtle text-info-emphasis rounded">
+			<div>
+				<h4 class="text-center">Basit Al Ahad</h4>
+				<p class="text-center fs-5">Student No: <span class="fw-bold">S4098413</span></p>
+			</div>
+		</div>
+
+
+		<!--Footer Start-->
+		<footer th:replace="~{layout ::page_footer}">
+		</footer>
+		<!--Footer End-->
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
