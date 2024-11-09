@@ -21,19 +21,19 @@ public class wasteController {
 	@Autowired
 	private Waste14Repository waste14Repo;
 	
-	@GetMapping("/waste2013")
+	@GetMapping("/waste2018")
 	public String getWastes(Model model) {
 		var wastes = wasteRepo.findAll(Sort.by(Sort.Direction.ASC, "id"));
 		model.addAttribute("wastes", wastes);
 
-		return "wastes/waste2013";
+		return "wastes/waste2018";
 	}
 	
-	@GetMapping("/waste2014")
+	@GetMapping("/waste2020")
 	public String getWaste14(Model model) {
 		var wastes = waste14Repo.findAll(Sort.by(Sort.Direction.ASC, "id"));
 		model.addAttribute("wastes", wastes);
 		
-		return "wastes/waste2014";
+		return "wastes/waste2020";
 	}
 }
